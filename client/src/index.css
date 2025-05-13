@@ -1,0 +1,104 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 64px;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.ant-layout-sider-collapsed .logo {
+  font-size: 16px;
+}
+
+.site-layout-background {
+  background: #fff;
+}
+
+.ant-layout-content {
+  margin: 24px 16px;
+  padding: 24px;
+  background: #fff;
+  min-height: 280px;
+}
+
+.page-header {
+  margin-bottom: 24px;
+}
+
+.table-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  margin-top: 24px;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.dashboard-card {
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.dashboard-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transform: translateY(-4px);
+}
+
+.stat-card {
+  text-align: center;
+}
+
+.stat-card .ant-statistic-title {
+  font-size: 16px;
+}
+
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f0f2f5;
+}
+
+.auth-card {
+  width: 400px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 576px) {
+  .auth-card {
+    width: 90%;
+  }
+  
+  .card-container {
+    grid-template-columns: 1fr;
+  }
+}

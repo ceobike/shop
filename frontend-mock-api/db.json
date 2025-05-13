@@ -1,0 +1,229 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "username": "admin",
+      "email": "admin@example.com",
+      "firstName": "Admin",
+      "lastName": "User",
+      "role": "admin",
+      "isActive": true,
+      "lastLogin": "2023-05-12T10:30:00Z",
+      "createdAt": "2023-01-01T00:00:00Z"
+    },
+    {
+      "id": "2",
+      "username": "manager1",
+      "email": "manager@example.com",
+      "firstName": "Store",
+      "lastName": "Manager",
+      "role": "manager",
+      "isActive": true,
+      "lastLogin": "2023-05-11T14:20:00Z",
+      "createdAt": "2023-01-02T00:00:00Z"
+    },
+    {
+      "id": "3",
+      "username": "employee1",
+      "email": "employee@example.com",
+      "firstName": "John",
+      "lastName": "Doe",
+      "role": "employee",
+      "isActive": true,
+      "lastLogin": "2023-05-10T09:15:00Z",
+      "createdAt": "2023-01-03T00:00:00Z"
+    }
+  ],
+  "stores": [
+    {
+      "id": "1",
+      "name": "Main Store",
+      "address": "123 Main St",
+      "city": "New York",
+      "state": "NY",
+      "zipCode": "10001",
+      "phone": "555-123-4567",
+      "email": "main@example.com",
+      "manager": "John Smith",
+      "createdAt": "2023-01-01T00:00:00Z"
+    },
+    {
+      "id": "2",
+      "name": "Downtown Branch",
+      "address": "456 Market St",
+      "city": "San Francisco",
+      "state": "CA",
+      "zipCode": "94103",
+      "phone": "555-987-6543",
+      "email": "downtown@example.com",
+      "manager": "Jane Doe",
+      "createdAt": "2023-02-15T00:00:00Z"
+    },
+    {
+      "id": "3",
+      "name": "East Side Location",
+      "address": "789 Broadway",
+      "city": "Chicago",
+      "state": "IL",
+      "zipCode": "60601",
+      "phone": "555-456-7890",
+      "email": "eastside@example.com",
+      "manager": "Bob Johnson",
+      "createdAt": "2023-03-10T00:00:00Z"
+    }
+  ],
+  "products": [
+    {
+      "id": "1",
+      "name": "Laptop",
+      "sku": "TECH-001",
+      "description": "High-performance laptop with 16GB RAM",
+      "category": "Electronics",
+      "price": 1299.99,
+      "cost": 899.99,
+      "storeId": "1",
+      "createdAt": "2023-01-15T00:00:00Z"
+    },
+    {
+      "id": "2",
+      "name": "Smartphone",
+      "sku": "TECH-002",
+      "description": "Latest smartphone with 128GB storage",
+      "category": "Electronics",
+      "price": 799.99,
+      "cost": 499.99,
+      "storeId": "1",
+      "createdAt": "2023-01-20T00:00:00Z"
+    },
+    {
+      "id": "3",
+      "name": "Desk Chair",
+      "sku": "FURN-001",
+      "description": "Ergonomic office chair",
+      "category": "Furniture",
+      "price": 249.99,
+      "cost": 149.99,
+      "storeId": "2",
+      "createdAt": "2023-02-10T00:00:00Z"
+    }
+  ],
+  "inventory": [
+    {
+      "id": "1",
+      "productId": "1",
+      "storeId": "1",
+      "quantity": 25,
+      "minQuantity": 5,
+      "maxQuantity": 50,
+      "lastUpdated": "2023-05-01T00:00:00Z"
+    },
+    {
+      "id": "2",
+      "productId": "2",
+      "storeId": "1",
+      "quantity": 40,
+      "minQuantity": 10,
+      "maxQuantity": 100,
+      "lastUpdated": "2023-05-02T00:00:00Z"
+    },
+    {
+      "id": "3",
+      "productId": "3",
+      "storeId": "2",
+      "quantity": 15,
+      "minQuantity": 5,
+      "maxQuantity": 30,
+      "lastUpdated": "2023-05-03T00:00:00Z"
+    }
+  ],
+  "procurement": [
+    {
+      "id": "1",
+      "productId": "1",
+      "storeId": "1",
+      "quantity": 10,
+      "price": 8999.90,
+      "supplier": "Tech Suppliers Inc.",
+      "orderDate": "2023-04-15T00:00:00Z",
+      "deliveryDate": "2023-04-20T00:00:00Z",
+      "status": "delivered"
+    },
+    {
+      "id": "2",
+      "productId": "2",
+      "storeId": "1",
+      "quantity": 20,
+      "price": 9999.80,
+      "supplier": "Mobile Wholesalers",
+      "orderDate": "2023-04-18T00:00:00Z",
+      "deliveryDate": null,
+      "status": "ordered"
+    },
+    {
+      "id": "3",
+      "productId": "3",
+      "storeId": "2",
+      "quantity": 5,
+      "price": 749.95,
+      "supplier": "Office Furniture Co.",
+      "orderDate": "2023-04-20T00:00:00Z",
+      "deliveryDate": null,
+      "status": "pending"
+    }
+  ],
+  "orders": [
+    {
+      "id": "1",
+      "orderNumber": "ORD-123456",
+      "customer": "Alice Johnson",
+      "storeId": "1",
+      "orderDate": "2023-05-01T10:30:00Z",
+      "totalAmount": 2099.98,
+      "status": "completed",
+      "paymentMethod": "credit_card"
+    },
+    {
+      "id": "2",
+      "orderNumber": "ORD-123457",
+      "customer": "Bob Smith",
+      "storeId": "1",
+      "orderDate": "2023-05-02T14:45:00Z",
+      "totalAmount": 799.99,
+      "status": "processing",
+      "paymentMethod": "debit_card"
+    },
+    {
+      "id": "3",
+      "orderNumber": "ORD-123458",
+      "customer": "Charlie Brown",
+      "storeId": "2",
+      "orderDate": "2023-05-03T09:15:00Z",
+      "totalAmount": 249.99,
+      "status": "pending",
+      "paymentMethod": "cash"
+    }
+  ],
+  "auth": {
+    "login": {
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJ1c2VybmFtZSI6ImFkbWluIiwiZW1haWwiOiJhZG1pbkBleGFtcGxlLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTY4MzkyMDAwMCwiZXhwIjoxNjgzOTIzNjAwfQ.8tat9J_uJfN-n9xHBvXWI7jCgIwGNGKnBRgi7LpYU-Q",
+      "user": {
+        "id": "1",
+        "username": "admin",
+        "email": "admin@example.com",
+        "firstName": "Admin",
+        "lastName": "User",
+        "role": "admin"
+      }
+    },
+    "me": {
+      "user": {
+        "id": "1",
+        "username": "admin",
+        "email": "admin@example.com",
+        "firstName": "Admin",
+        "lastName": "User",
+        "role": "admin"
+      }
+    }
+  }
+}

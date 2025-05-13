@@ -1,0 +1,162 @@
+{
+  "app": {
+    "title": "Shop Management System",
+    "loading": "Loading..."
+  },
+  "auth": {
+    "login": {
+      "title": "Login",
+      "username": "Username",
+      "password": "Password",
+      "submit": "Login",
+      "forgotPassword": "Forgot Password?",
+      "register": "Don't have an account? Register",
+      "error": "Invalid username or password"
+    },
+    "register": {
+      "title": "Register",
+      "username": "Username",
+      "email": "Email",
+      "password": "Password",
+      "confirmPassword": "Confirm Password",
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "submit": "Register",
+      "login": "Already have an account? Login",
+      "success": "Registration successful! Please login."
+    },
+    "forgotPassword": {
+      "title": "Forgot Password",
+      "email": "Email",
+      "submit": "Reset Password",
+      "login": "Back to Login",
+      "success": "Password reset email sent!"
+    }
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "welcome": "Welcome, {{name}}!",
+    "summary": {
+      "title": "Summary",
+      "stores": "Stores",
+      "products": "Products",
+      "inventory": "Inventory",
+      "orders": "Orders"
+    }
+  },
+  "users": {
+    "title": "Users",
+    "add": "Add User",
+    "edit": "Edit User",
+    "delete": "Delete User",
+    "fields": {
+      "username": "Username",
+      "email": "Email",
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "role": "Role",
+      "isActive": "Active",
+      "lastLogin": "Last Login",
+      "createdAt": "Created At"
+    }
+  },
+  "stores": {
+    "title": "Stores",
+    "add": "Add Store",
+    "edit": "Edit Store",
+    "delete": "Delete Store",
+    "fields": {
+      "name": "Name",
+      "address": "Address",
+      "city": "City",
+      "state": "State",
+      "zipCode": "Zip Code",
+      "phone": "Phone",
+      "email": "Email",
+      "manager": "Manager",
+      "createdAt": "Created At"
+    }
+  },
+  "products": {
+    "title": "Products",
+    "add": "Add Product",
+    "edit": "Edit Product",
+    "delete": "Delete Product",
+    "fields": {
+      "name": "Name",
+      "sku": "SKU",
+      "description": "Description",
+      "category": "Category",
+      "price": "Price",
+      "cost": "Cost",
+      "store": "Store",
+      "createdAt": "Created At"
+    }
+  },
+  "inventory": {
+    "title": "Inventory",
+    "add": "Add Inventory",
+    "edit": "Edit Inventory",
+    "delete": "Delete Inventory",
+    "fields": {
+      "product": "Product",
+      "store": "Store",
+      "quantity": "Quantity",
+      "minQuantity": "Min Quantity",
+      "maxQuantity": "Max Quantity",
+      "lastUpdated": "Last Updated"
+    }
+  },
+  "procurement": {
+    "title": "Procurement",
+    "add": "Add Procurement",
+    "edit": "Edit Procurement",
+    "delete": "Delete Procurement",
+    "fields": {
+      "product": "Product",
+      "store": "Store",
+      "quantity": "Quantity",
+      "price": "Price",
+      "supplier": "Supplier",
+      "orderDate": "Order Date",
+      "deliveryDate": "Delivery Date",
+      "status": "Status"
+    }
+  },
+  "orders": {
+    "title": "Orders",
+    "add": "Add Order",
+    "edit": "Edit Order",
+    "delete": "Delete Order",
+    "fields": {
+      "orderNumber": "Order Number",
+      "customer": "Customer",
+      "store": "Store",
+      "orderDate": "Order Date",
+      "totalAmount": "Total Amount",
+      "status": "Status",
+      "paymentMethod": "Payment Method"
+    }
+  },
+  "common": {
+    "actions": "Actions",
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "view": "View",
+    "search": "Search",
+    "filter": "Filter",
+    "sort": "Sort",
+    "export": "Export",
+    "import": "Import",
+    "refresh": "Refresh",
+    "confirmDelete": "Are you sure you want to delete this item?",
+    "yes": "Yes",
+    "no": "No",
+    "success": "Success",
+    "error": "Error",
+    "warning": "Warning",
+    "info": "Info"
+  }
+}

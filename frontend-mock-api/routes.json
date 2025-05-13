@@ -1,0 +1,16 @@
+{
+  "/api/auth/login": "/auth/login",
+  "/api/auth/me": "/auth/me",
+  "/api/users": "/users",
+  "/api/users/:id": "/users/:id",
+  "/api/stores": "/stores",
+  "/api/stores/:id": "/stores/:id",
+  "/api/products": "/products",
+  "/api/products/:id": "/products/:id",
+  "/api/inventory": "/inventory",
+  "/api/inventory/:id": "/inventory/:id",
+  "/api/procurement": "/procurement",
+  "/api/procurement/:id": "/procurement/:id",
+  "/api/orders": "/orders",
+  "/api/orders/:id": "/orders/:id"
+}
